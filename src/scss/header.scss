@@ -1,0 +1,8 @@
+header {
+    height: 300px;
+    grid-template-rows: 1fr 20px;
+
+    nav ul li {
+        display: inline-block;
+    }
+}

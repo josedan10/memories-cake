@@ -1,0 +1,13 @@
+.products {
+    max-height: 528px;
+    height: 100vh;
+    background-color: $light-gray;
+}
+
+.card-products {
+    color: $light-brown;
+
+    p{
+        padding: 10px 0;
+    }
+}
