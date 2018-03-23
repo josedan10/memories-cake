@@ -6,7 +6,8 @@ const config = {
 	// entry: './src/js/index.jsx',
 	entry: {
 		// config: './src/js/config.js',
-		index: './src/js/index.jsx'
+        index: './src/js/index.jsx',
+        slideshow: './src/js/slideshow.config.jsx'
 	},
 
 	output: {
