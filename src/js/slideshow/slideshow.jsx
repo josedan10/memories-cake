@@ -240,7 +240,7 @@ class SlideElement extends React.Component {
 		};
 
 		if (!(this.datos.titulo === null)) {
-			titulo = <h1 key={'h1-' + this.datos.id}>{this.datos.titulo}</h1>;	
+			titulo = <h2 key={'h2-' + this.datos.id}>{this.datos.titulo}</h2>;	
 		}
 
 		if (!(this.datos.texto === null)) {

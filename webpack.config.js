@@ -6,8 +6,12 @@ const config = {
 	// entry: './src/js/index.jsx',
 	entry: {
 		// config: './src/js/config.js',
-        index: './src/js/index.jsx',
-        slideshow: './src/js/slideshow.config.jsx'
+		// index: './src/js/index.jsx',
+		gallery: './src/js/gallery.config.jsx',
+		map: './src/js/map.config.jsx',
+		order: './src/js/order.config.jsx',
+		testimonials: './src/js/testimonials.config.jsx',
+		slideshow: './src/js/slideshow.config.jsx'
 	},
 
 	output: {

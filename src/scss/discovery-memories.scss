@@ -1,0 +1,25 @@
+.discovery-memories {
+    padding: 100px 0;
+}
+
+.show-memories {
+    flex-wrap: wrap;
+    width: 500px;
+
+    h1 {
+        text-align: center;
+    }
+
+    p {
+        text-align: center;
+    }
+}
+
+.buttons-container {
+    width: 100%;
+    margin-bottom: 50px;
+    
+    .btn {
+        width: 200px;
+    }
+}

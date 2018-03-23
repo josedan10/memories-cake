@@ -30,6 +30,9 @@ h6 {
 
 h1,
 h2 {
+  color: #7a3900; }
+
+h3 {
   color: #44210d; }
 
 p {
@@ -40,13 +43,27 @@ p {
   padding: 8px 12px;
   border-radius: 50px;
   border-style: solid;
-  border-width: 2px; }
+  border-width: 2px;
+  margin: 10px 0; }
+  .btn:hover {
+    cursor: pointer; }
 
 .btn-primary {
   color: #fff;
   background-color: #c69c6b;
   border-color: #c69c6b;
   font-size: 20px; }
+
+.btn-secondary {
+  color: #c69c6b;
+  background-color: transparent;
+  border-color: #c69c6b;
+  font-size: 20px; }
+
+.btn-search {
+  color: #fff;
+  background-color: #4baa2b;
+  border-color: #4baa2b; }
 
 header nav span,
 .link-nav {
@@ -76,7 +93,7 @@ header nav span,
 
 .container {
   width: 100%;
-  max-width: 1000px;
+  max-width: 1100px;
   height: 100%; }
 
 .price {
@@ -86,6 +103,20 @@ header nav span,
   padding: 5px; }
   .price span {
     color: #c69c6b; }
+
+.line-decorator {
+  display: block;
+  width: 80px;
+  border-bottom: solid #c69c6b 2px; }
+
+input,
+textarea {
+  border-radius: 50px;
+  border: solid 1px;
+  padding: 10px 10px; }
+
+textarea {
+  resize: none; }
 
 header {
   height: 300px;
@@ -189,5 +220,235 @@ header {
     transition: background .7s ease; }
   .slideshow-control.control-active {
     background-color: #c69c6b; }
+
+.title-dark-brown {
+  color: #44210d; }
+
+.title-light-brown {
+  color: #c69c6b; }
+
+.title-pink {
+  color: #fb93be; }
+
+.card-testimonial {
+  flex-wrap: wrap;
+  height: 500px;
+  padding: 10px;
+  text-align: center; }
+
+.carousel-products img {
+  width: 50%; }
+
+.card-carousel {
+  width: 40%;
+  padding: 10px; }
+
+.gallery {
+  padding: 100px 0; }
+  .gallery .container {
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-gap: 60px; }
+
+.card-gallery {
+  grid-column: span 3;
+  grid-row: span 2; }
+
+.search {
+  background-color: #e5e5e5;
+  height: 300px; }
+  .search form {
+    width: 100%; }
+    .search form input[type='search'] {
+      width: 65%;
+      margin: 0 10px; }
+    .search form input[type='submit'] {
+      width: 17%;
+      min-width: 100px; }
+
+.card-search {
+  width: 20%; }
+
+.post {
+  position: relative;
+  overflow: hidden;
+  height: 500px; }
+  .post img {
+    position: absolute;
+    height: 100%;
+    top: 50px;
+    left: 0; }
+  .post .container {
+    padding-left: 30%; }
+
+.content-contact {
+  padding: 100px 0; }
+  .content-contact .container {
+    flex-wrap: wrap; }
+  .content-contact h1 {
+    text-align: center;
+    width: 100%; }
+  .content-contact p {
+    width: 100%;
+    text-align: center;
+    padding: 10px 100px;
+    margin-top: 40px; }
+  .content-contact .line-decorator {
+    margin-top: 20px;
+    border-color: #9f9f9f; }
+
+.contact {
+  background-color: #e5e5e5;
+  height: 500px; }
+  .contact .container {
+    position: relative; }
+
+.map {
+  width: 100%;
+  height: 100%; }
+
+.form-contact {
+  background-color: #fff;
+  padding: 25px;
+  width: 550px;
+  flex-wrap: wrap;
+  position: absolute;
+  left: 0; }
+  .form-contact input[type='tel'],
+  .form-contact input[type='email'] {
+    width: 47%;
+    position: relative;
+    margin: 10px 0;
+    border-color: #c69c6b; }
+  .form-contact input[type='tel'] {
+    left: -10px; }
+  .form-contact input[type='email'] {
+    right: -10px; }
+  .form-contact textarea {
+    width: 100%;
+    margin: 0 5px;
+    height: 150px;
+    border-radius: 30px;
+    border-color: #c69c6b; }
+  .form-contact .btn {
+    width: 100%;
+    margin: 10px 5px; }
+
+.discovery-memories {
+  padding: 100px 0; }
+
+.show-memories {
+  flex-wrap: wrap;
+  width: 500px; }
+  .show-memories h1 {
+    text-align: center; }
+  .show-memories p {
+    text-align: center; }
+
+.buttons-container {
+  width: 100%;
+  margin-bottom: 50px; }
+  .buttons-container .btn {
+    width: 200px; }
+
+.contact-content {
+  position: relative;
+  height: 400px; }
+  .contact-content img {
+    position: absolute;
+    left: 0; }
+
+.content-container {
+  flex-wrap: wrap;
+  height: 100%;
+  width: 40%;
+  position: absolute;
+  right: 200px; }
+  .content-container h1,
+  .content-container h2 {
+    width: 100%; }
+  .content-container .line-decorator {
+    position: absolute;
+    left: -10px;
+    top: 80px; }
+  .content-container img {
+    position: absolute;
+    right: 0;
+    top: 100px; }
+  .content-container h2 {
+    text-align: right; }
+
+.order-form form {
+  flex-wrap: wrap; }
+  .order-form form > div {
+    width: 100%; }
+.order-form .data {
+  border-top: solid 1px #c69c6b;
+  border-bottom: solid 1px #c69c6b;
+  width: 100%;
+  height: 500px;
+  padding: 50px 0; }
+  .order-form .data .container {
+    flex-wrap: wrap;
+    max-width: 800px; }
+    .order-form .data .container input {
+      width: 48%;
+      margin: 5px; }
+    .order-form .data .container textarea {
+      width: 100%; }
+.order-form .order {
+  height: 500px;
+  padding: 80px; }
+  .order-form .order .container {
+    flex-wrap: wrap;
+    max-width: 800px; }
+  .order-form .order h2 {
+    width: 100%;
+    text-align: center; }
+  .order-form .order input {
+    width: 48%; }
+  .order-form .order .btn {
+    width: 200px;
+    margin: 0 auto; }
+  .order-form .order .line-decorator {
+    margin: 0 auto; }
+
+#address {
+  height: 100px;
+  border-radius: 20px; }
+
+#story {
+  height: 180px;
+  border-radius: 30px; }
+
+footer {
+  height: 500px;
+  position: relative;
+  background-color: #e5e5e5; }
+  footer > .grid-container {
+    padding: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr; }
+  footer .sub-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 200px 300px;
+    grid-row-gap: 10px;
+    height: 100%;
+    width: 100%;
+    padding: 0 15px; }
+  footer .header {
+    position: relative; }
+    footer .header img,
+    footer .header h3 {
+      position: absolute;
+      bottom: 10px; }
+    footer .header img {
+      margin-bottom: 10px; }
+  footer .line-decorator {
+    position: absolute;
+    bottom: 5px; }
+
+.nav-footer {
+  padding: 10px 0; }
 
 /*# sourceMappingURL=custom.css.map */

@@ -1,5 +1,6 @@
 // Colores
 $light-brown: #c69c6b;
+$brown: #7a3900;
 $dark-brown: #44210d;
 $light-gray: #e5e5e5;
 $dark-gray: #9f9f9f;
@@ -56,6 +57,10 @@ h6 {
 
 h1,
 h2 {
+    color: $brown;
+}
+
+h3 {
     color: $dark-brown;
 }
 
@@ -71,6 +76,11 @@ p {
     border-radius: 50px;
     border-style: solid;
     border-width: 2px;
+    margin: 10px 0;
+
+    &:hover {
+        cursor: pointer;
+    }
 }
 
 .btn-primary {
@@ -78,6 +88,19 @@ p {
     background-color: $light-brown;
     border-color: $light-brown;
     font-size: 20px;
+}
+
+.btn-secondary {
+    color: $light-brown;
+    background-color: transparent;
+    border-color: $light-brown;
+    font-size: 20px;
+}
+
+.btn-search {
+    color: $white;
+    background-color: $green;
+    border-color: $green;
 }
 
 // Links nav
@@ -116,7 +139,7 @@ header nav span,
 
 .container {
     width: 100%;
-    max-width: 1000px;
+    max-width: 1100px;
     height: 100%;
 }
 
@@ -129,4 +152,25 @@ header nav span,
     span {
         color: $light-brown;
     }
+}
+
+// Decorators
+
+.line-decorator {
+    display: block;
+    width: 80px;
+    border-bottom: solid $light-brown 2px;
+}
+
+// Inputs and textareas
+
+input,
+textarea {
+    border-radius: 50px;
+    border: solid 1px;
+    padding: 10px 10px;
+}
+
+textarea {
+    resize: none;
 }

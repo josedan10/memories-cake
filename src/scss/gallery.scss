@@ -1,0 +1,14 @@
+.gallery {
+    padding: 100px 0;
+
+    .container {
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        grid-gap: 60px;
+    }
+}
+
+.card-gallery {
+    grid-column: span 3;
+    grid-row: span 2;
+}

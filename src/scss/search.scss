@@ -1,0 +1,23 @@
+.search {
+    background-color: $light-gray;
+
+    height: 300px;
+    form {
+        width: 100%;
+
+        input[type='search'] {
+            width: 65%;
+            margin: 0 10px;
+        }
+
+        input[type='submit'] {
+            width: 17%;
+            min-width: 100px;
+        }
+
+    }
+}
+
+.card-search {
+    width: 20%;
+}

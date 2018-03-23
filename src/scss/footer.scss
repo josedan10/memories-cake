@@ -1,0 +1,44 @@
+footer {
+    height: 500px;
+    position: relative;
+    background-color: $light-gray;
+
+    & > .grid-container {
+        padding: 10px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+    } 
+
+    .sub-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 200px 300px;
+        grid-row-gap: 10px;
+
+        height: 100%;
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    .header {
+        position: relative;
+        
+        img,
+        h3 {
+            position: absolute;
+            bottom: 10px;
+        }
+
+        img {
+            margin-bottom: 10px;
+        }
+    }
+
+    .line-decorator {
+        position: absolute;
+        bottom: 5px;
+    }
+}
+
+.nav-footer {
+    padding: 10px 0;
+}
