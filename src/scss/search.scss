@@ -1,7 +1,8 @@
 .search {
-    background-color: $light-gray;
+    background-color: #f3f3f3;
+    position: relative;
 
-    height: 300px;
+    height: 295px;
     form {
         width: 100%;
 
@@ -15,6 +16,23 @@
             min-width: 100px;
         }
 
+    }
+
+    img {
+        position: absolute;
+
+        &.left {
+            left: -100px;
+            height: 295px;
+        }
+        
+        &.right {
+            right: 0;
+        }
+    }
+
+    .container {
+        z-index: 10;
     }
 }
 

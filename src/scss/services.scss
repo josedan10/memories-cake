@@ -1,0 +1,84 @@
+.tell-story,
+.corporative {
+    .container {
+        flex-wrap: wrap;
+        h1 {
+            text-align: center;
+        }
+    }
+}
+
+.btns-container,
+.corporatives-container {
+    width: 100%;
+}
+
+.tell-story {
+    padding: 200px 10px;
+
+    p {
+        text-align: center;
+    }
+
+    .btns-container {
+        padding: 50px;
+    
+        .btn {
+            width: 150px;
+            color: $brown;
+        }
+    }
+}
+
+.allies {
+    background-image: url("../img/utensilios.jpg"); 
+}
+
+.corporative {
+    padding: 200px 10px;
+}
+
+.corporatives-container {
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 1fr;
+    padding-top: 50px;
+
+    .card-corporative {
+        grid-column: span 1;
+        flex-wrap: wrap;
+
+        img,
+        p,
+        h2 {
+            width: 100%;
+        }
+        
+        img {
+            border: solid 1px $brown;
+        }
+
+        h2,
+        p {
+            text-align: center;
+        }
+    }
+}
+
+.suscribe {
+    padding: 100px;
+    background-color: $light-brown;
+
+    form {
+        width: 100%;
+    }
+
+    .btn {
+        width: 200px;
+        margin-right: 10px;
+    }
+
+    input[type='email'] {
+        width: 60%;
+        margin-left: 10px;
+    }
+}

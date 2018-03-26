@@ -1,10 +1,23 @@
 .discovery-memories {
-    padding: 100px 0;
+    padding: 50px 0;
+    height: 600px;
+    overflow: hidden;
+    position: relative;
+
+    img {
+        position: absolute;
+        height: 700px;
+        top: 0;
+        left: -80px;
+        opacity: .5;
+    }
 }
 
 .show-memories {
     flex-wrap: wrap;
+    position: absolute;
     width: 500px;
+    right: 0;
 
     h1 {
         text-align: center;

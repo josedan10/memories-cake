@@ -1,10 +1,12 @@
 .contact-content {
     position: relative;
     height: 400px;
+    overflow: hidden;
 
-    img {
+    & > img {
         position: absolute;
         left: 0;
+        height: 120%;
     }
 }
 
@@ -34,6 +36,12 @@
     }
 
     h2 {
+        margin-top: 100px;
+        text-align: right;
+    }
+
+    p {
+        margin-bottom: 10px;
         text-align: right;
     }
 }
@@ -71,8 +79,7 @@
     }
 
     .order {
-        height: 500px;
-        padding: 80px;
+        padding: 50px;
 
         .container {
             flex-wrap: wrap;
@@ -90,7 +97,7 @@
 
         .btn {
             width: 200px;
-            margin: 0 auto;
+            margin: 20px auto;
         }
     
         .line-decorator {

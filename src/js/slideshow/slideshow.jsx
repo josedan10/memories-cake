@@ -224,9 +224,9 @@ class SlideElement extends React.Component {
 
 		let disp,
 			info,
-			precio = null,
-			texto = null,
-			titulo = null;
+			price = null,
+			text = null,
+			title = null;
 
 		if (this.props.active != '') {
 			disp = 'block';
@@ -239,27 +239,30 @@ class SlideElement extends React.Component {
 			// display: disp
 		};
 
-		if (!(this.datos.titulo === null)) {
-			titulo = <h2 key={'h2-' + this.datos.id}>{this.datos.titulo}</h2>;	
+		if (!(this.datos.title === null)) {
+			title = <h2 key={'h2-' + this.datos.id}>{this.datos.title}</h2>;	
 		}
 
-		if (!(this.datos.texto === null)) {
-			texto = <p key={'p-' + this.datos.id}>{this.datos.texto}</p>;
+		if (!(this.datos.text === null)) {
+			text = <p key={'p-' + this.datos.id}>{this.datos.text}</p>;
 		}
 
-		if (!(this.datos.precio === null)) {
-			precio = (
+		if (!(this.datos.price === null)) {
+			price = (
 				<div className="price flex-between" key={'price-' + this.datos.id}>
-					<span>Precio</span><span>{this.datos.precio}</span>
+					<span>price</span><span>{this.datos.price}</span>
 				</div>
 			);
 		}
 
-		info = [titulo, texto, precio];
+		info = [title, text, price];
 
 
 		return (
 			<div className={'slideshow-element' + this.props.active} style={styles}>
+				<div className="img flex-center">
+					<img src={this.datos.image} />
+				</div>
 				<div className='slide-element-info'>
 					{info}
 				</div>

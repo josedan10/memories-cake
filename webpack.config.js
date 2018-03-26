@@ -7,6 +7,7 @@ const config = {
 	entry: {
 		// config: './src/js/config.js',
 		// index: './src/js/index.jsx',
+		allies: './src/js/allies.config.jsx',
 		gallery: './src/js/gallery.config.jsx',
 		map: './src/js/map.config.jsx',
 		order: './src/js/order.config.jsx',

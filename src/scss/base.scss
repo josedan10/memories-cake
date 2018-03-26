@@ -58,6 +58,7 @@ h6 {
 h1,
 h2 {
     color: $brown;
+    width: 100%;
 }
 
 h3 {
@@ -67,6 +68,7 @@ h3 {
 // Paragraphs
 p {
     padding: 10px 0;
+    font-size: 14px;
 }
 
 // Buttons
@@ -77,6 +79,7 @@ p {
     border-style: solid;
     border-width: 2px;
     margin: 10px 0;
+    font-size: 18px;
 
     &:hover {
         cursor: pointer;
@@ -87,20 +90,24 @@ p {
     color: $white;
     background-color: $light-brown;
     border-color: $light-brown;
-    font-size: 20px;
 }
 
 .btn-secondary {
     color: $light-brown;
     background-color: transparent;
     border-color: $light-brown;
-    font-size: 20px;
 }
 
 .btn-search {
     color: $white;
     background-color: $green;
     border-color: $green;
+}
+
+.btn-suscribe {
+    color: $white;
+    border-color: $white;
+    background-color: transparent;
 }
 
 // Links nav
@@ -137,10 +144,17 @@ header nav span,
     justify-content: space-between;
 }
 
+.flex-around {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
 .container {
     width: 100%;
     max-width: 1100px;
     height: 100%;
+    position: relative;
 }
 
 .price {
@@ -160,6 +174,14 @@ header nav span,
     display: block;
     width: 80px;
     border-bottom: solid $light-brown 2px;
+}
+
+hr { 
+    display: block;
+    height: 0;
+    border-top: outset $light-brown 1px;
+    z-index: 10;
+    width: 100%;
 }
 
 // Inputs and textareas

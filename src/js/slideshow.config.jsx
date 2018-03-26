@@ -5,24 +5,24 @@ import SlideShow from './slideshow/slideshow';
 
 const slideshow = [
 	{
-		titulo: 'Cake #001',
-		texto: 'Ipsum deserunt ea occaecat elit nisi irure ipsum dolor aliquip aliquip.',
-		precio: '70.000',
-		imagen: '',
+		title: 'Cake #001',
+		text: 'Ipsum deserunt ea occaecat elit nisi irure ipsum dolor aliquip aliquip.',
+		price: '70.000',
+		image: 'src/img/postres/postre1.png',
 		id: 0
 	},
 	{
-		titulo: 'Cake #002',
-		texto: 'Aute mollit ullamco ullamco aliqua consequat tempor adipisicing laboris consequat in labore.',
-		precio: '95.000',
-		imagen: '',
+		title: 'Cake #002',
+		text: 'Aute mollit ullamco ullamco aliqua consequat tempor adipisicing laboris consequat in labore.',
+		price: '95.000',
+		image: 'src/img/postres/postre2.png',
 		id: 0
 	},
 	{
-		titulo: 'Cake #003',
-		texto: 'Sunt in nostrud ad consectetur reprehenderit Lorem fugiat minim ut incididunt exercitation.',
-		precio: '83.000',
-		imagen: '',
+		title: 'Cake #003',
+		text: 'Sunt in nostrud ad consectetur reprehenderit Lorem fugiat minim ut incididunt exercitation.',
+		price: '83.000',
+		image: 'src/img/postres/postre3.png',
 		id: 0
 	}
 ];
