@@ -1,5 +1,4 @@
 footer {
-    height: 500px;
     position: relative;
     background-color: $light-gray;
 
@@ -42,4 +41,14 @@ footer {
 
 .nav-footer {
     padding: 10px 0;
+}
+
+.flex-li {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    img {
+        margin-right: 5px;
+    }
 }

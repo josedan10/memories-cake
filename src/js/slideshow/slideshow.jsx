@@ -68,7 +68,6 @@ export default class Slideshow extends React.Component {
 			indice,
 			siguiente,
 			slideActual = document.getElementsByClassName('slideshow-active-element')[0],
-			slideSiguiente,
 			slides = document.getElementsByClassName('slideshow-element');
 		
 		for (indice = 0; indice < slides.length; indice++) {
@@ -133,7 +132,7 @@ export default class Slideshow extends React.Component {
 			
 			// Cambiamos el slide
 			for (let i = 0; i < slides.length; i++) {
-				if(slides[i].classList.contains('slideshow-active-element'))
+				if (slides[i].classList.contains('slideshow-active-element'))
 					slides[i].classList.remove('slideshow-active-element');
 			}
 			controls = document.getElementsByClassName('slideshow-control');
@@ -222,21 +221,13 @@ class SlideElement extends React.Component {
 
 	render() {
 
-		let disp,
-			info,
+		let info,
 			price = null,
 			text = null,
 			title = null;
 
-		if (this.props.active != '') {
-			disp = 'block';
-		} else {
-			disp = 'none';
-		}
-
 		const styles = {
 			backgroundImage: this.datos.imagen
-			// display: disp
 		};
 
 		if (!(this.datos.title === null)) {
@@ -259,11 +250,11 @@ class SlideElement extends React.Component {
 
 
 		return (
-			<div className={'slideshow-element' + this.props.active} style={styles}>
+			<div className={'flex-center slideshow-element' + this.props.active} style={styles}>
 				<div className="img flex-center">
 					<img src={this.datos.image} />
 				</div>
-				<div className='slide-element-info'>
+				<div className='flex-center slide-element-info'>
 					{info}
 				</div>
 			</div>

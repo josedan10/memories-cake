@@ -3,7 +3,7 @@ import React from 'react';
 export default class Allies extends React.Component {
 	constructor(props) {
 		super(props);
-		this.slides = (this.props.allies.length % 4) + 1;
+		this.slides = Math.floor(this.props.allies.length / 4) + 1;
 		this.totalAllies = this.props.allies.length;
         
 		this.state = {
@@ -47,8 +47,6 @@ export default class Allies extends React.Component {
 	
 			slideActive = document.getElementsByClassName('slideshow-element')[indice];
 			slideActive.classList.add('slideshow-active-element');
-
-			this.componentDidUpdate();
 		}
 	}
 
@@ -73,22 +71,25 @@ export default class Allies extends React.Component {
 		}
 
 		return (
-			<div className="container">
-				<h1>Allies</h1>
-				<span className="line-decorator" />
 
-				<div className="allies-container">
-					{slidesAllies.map((element, key) => {
-						if (key == this.state.active) {
-							return <div className="slide-element active-slide" key={"element-" + key}>{element}</div>;
-						}
-                        
-						return <div className="slide-element" key={"element-" + key}>{element}</div>;
-					})}
+			<div className="cover-bg">
+				<div className="container flex-center">
+					<h1>Allies</h1>
+					<span className="line-decorator" />
+
+					<div className="slideshow-container-slides allies-container flex-center">
+						{slidesAllies.map((element, key) => {
+							if (key == this.state.active) {
+								return <div className="slideshow-element slideshow-active-element flex-around" key={"element-" + key}>{element}</div>;
+							}
+                            
+							return <div className="slideshow-element flex-around" key={"element-" + key}>{element}</div>;
+						})}
+					</div>
+
+					<ContainerControls active={this.state.active} length={this.slides} onClick={this.slideByControl.bind(this)}/>
+                    
 				</div>
-
-				<ContainerControls length={this.slides} onClick={this.slideByControl.bind(this)}/>
-                
 			</div>
 		);
 	}

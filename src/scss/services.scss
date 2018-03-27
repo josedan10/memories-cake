@@ -31,7 +31,48 @@
 }
 
 .allies {
-    background-image: url("../img/utensilios.jpg"); 
+    background-image: url("../img/utensilios.jpg");
+    background-position: right center;
+    width: 100%;
+    height: 100vh;
+    max-height: 600px;
+    position: relative;
+
+    .cover-bg {
+        position: absolute;        
+        padding: 50px 10px;
+        width: 100%;
+        height: 100%;
+        background-color: rgba($color: #503615, $alpha: 0.8);
+    }
+
+    .container {
+        flex-wrap: wrap;
+        height: 70%;
+        min-height: 300px;
+    }
+
+    h1 {
+        text-align: center;
+        color: $white;
+    }
+
+    .slideshow-control {
+        background-color: transparent;
+
+        &.control-active {
+            background-color: $white;
+        }
+    }
+}
+
+.allies-container {
+    position: relative;
+
+    .slideshow-element {
+        width: 100%;
+        height: 60%;
+    }
 }
 
 .corporative {
@@ -45,9 +86,9 @@
 
     .card-corporative {
         grid-column: span 1;
-        flex-wrap: wrap;
+        grid-template-columns: 1fr;
+        grid-template-rows: minmax(50px, 200px) 50px 1fr;
 
-        img,
         p,
         h2 {
             width: 100%;
@@ -55,6 +96,10 @@
         
         img {
             border: solid 1px $brown;
+            height: 200px;
+            width: 200px;
+            margin: 0 auto;
+            border-radius: 50%;
         }
 
         h2,
