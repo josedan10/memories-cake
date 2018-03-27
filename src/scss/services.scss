@@ -83,29 +83,29 @@
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: 1fr;
     padding-top: 50px;
+}
 
-    .card-corporative {
-        grid-column: span 1;
-        grid-template-columns: 1fr;
-        grid-template-rows: minmax(50px, 200px) 50px 1fr;
+.card-corporative {
+    grid-column: span 1;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 50px 1fr;
 
-        p,
-        h2 {
-            width: 100%;
-        }
-        
-        img {
-            border: solid 1px $brown;
-            height: 200px;
-            width: 200px;
-            margin: 0 auto;
-            border-radius: 50%;
-        }
+    p,
+    h2 {
+        width: 100%;
+    }
+    
+    img {
+        border: solid 1px $brown;
+        height: 200px;
+        width: 200px;
+        margin: 0 auto;
+        border-radius: 50%;
+    }
 
-        h2,
-        p {
-            text-align: center;
-        }
+    h2,
+    p {
+        text-align: center;
     }
 }
 

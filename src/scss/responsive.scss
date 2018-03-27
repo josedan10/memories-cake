@@ -1,0 +1,115 @@
+// @media all and (max-width: 1690px) {}
+@media all and (max-width: 1280px) {
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .gallery {
+        .grid-container {
+            grid-gap: 10px;
+        }
+    }
+
+    .post{
+        img {
+            width: 45%;
+        }
+
+        .card-post {
+            padding: 0 40px;
+        }
+    }
+
+    .corporative {
+        height: 100vh;
+        padding: 0;
+    }
+
+    .card-corporative {
+        img {
+            width: 150px;
+            height: 150px;
+        }
+    }
+
+    .content-container {
+        right: 10px;
+
+        .line-decorator {
+            left: 10px;
+        }
+    }
+
+    .form-contact {
+        left: 20px;
+    }
+}
+@media all and (max-width: 980px) { 
+    // The buttons must be smallest
+    .buttons-container .btn {
+        width: 150px;
+    }
+
+    // Changes to movil nav
+
+    .card-gallery {
+        grid-column: span 4;
+    }
+
+    .card-corporative {
+        overflow: hidden;
+        max-height: 300px;
+        p {
+            overflow: hidden;
+        }
+    }
+
+    .contact-content{
+        & > img { 
+            height: 100%;
+        }
+
+        .content-container {
+            img {
+                display: none;
+            }
+
+            h2 {
+                margin-top: 30px;
+            }
+
+            p {
+                text-align: justify;
+            }
+        }
+    }
+}
+@media all and (max-width: 736px) { 
+
+    .gallery {
+        .grid-container {
+            grid-gap: 30px;
+        }
+    }
+
+    .card-gallery {
+        grid-column: span 6;
+    }
+}
+@media all and (max-width: 480px) { 
+    .gallery {
+        .grid-container {
+            grid-gap: 10px;
+        }
+    }
+
+    .card-gallery {
+        grid-column: span 12;
+
+        img {
+            margin: 0 auto;
+            max-width: 300px;
+        }
+    }
+}

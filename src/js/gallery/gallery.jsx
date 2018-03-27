@@ -27,7 +27,7 @@ class GalleryItem extends React.Component {
 
 	render() {
 		return (
-			<div className="card-gallery">
+			<div className="card-gallery flex-center">
 				<img src={this.props.data.img} alt="gallery-img"/>
 				<h2>{this.props.data.name}</h2>
 				<p>{this.props.data.text}</p>
