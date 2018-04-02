@@ -36,6 +36,12 @@ h2 {
 h3 {
   color: #44210d; }
 
+.title-section {
+  flex-wrap: wrap; }
+  .title-section h1 {
+    width: 100%;
+    text-align: center; }
+
 p {
   padding: 10px 0;
   font-size: 14px; }
@@ -262,11 +268,11 @@ header {
   .testimonials .background-image {
     position: absolute;
     z-index: -1; }
-    .testimonials .background-image:first-child {
+    .testimonials .background-image.left {
       height: 70%;
       left: -60px;
       top: 100px; }
-    .testimonials .background-image:last-child {
+    .testimonials .background-image.right {
       position: absolute;
       right: -50px;
       top: -10px;
@@ -366,7 +372,6 @@ header {
 
 .post {
   position: relative;
-  overflow: hidden;
   height: 500px; }
   .post img {
     position: absolute;
@@ -467,7 +472,8 @@ header {
   .contact-content > img {
     position: absolute;
     left: 0;
-    height: 120%; }
+    width: 70%;
+    max-width: 800px; }
 
 .content-container {
   flex-wrap: wrap;
@@ -478,14 +484,11 @@ header {
   .content-container h1,
   .content-container h2 {
     width: 100%; }
-  .content-container .line-decorator {
-    position: absolute;
-    left: -10px;
-    top: 80px; }
+  .content-container .info {
+    position: relative; }
   .content-container img {
     position: absolute;
-    right: 0;
-    top: 100px; }
+    right: 0; }
   .content-container h2 {
     margin-top: 100px;
     text-align: right; }
@@ -513,6 +516,8 @@ header {
       width: 100%; }
 .order-form .order {
   padding: 50px; }
+  .order-form .order .title-section {
+    width: 100%; }
   .order-form .order .container {
     flex-wrap: wrap;
     max-width: 800px; }
@@ -593,12 +598,13 @@ header {
 .corporatives-container {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr;
-  padding-top: 50px; }
+  padding-top: 50px;
+  grid-column-gap: 10px; }
 
 .card-corporative {
   grid-column: span 1;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 50px 1fr; }
+  grid-template-rows: 150px 50px auto; }
   .card-corporative p,
   .card-corporative h2 {
     width: 100%; }
@@ -697,13 +703,10 @@ footer {
     grid-column: span 4; }
 
   .card-corporative {
-    overflow: hidden;
-    max-height: 300px; }
+    max-height: 350px; }
     .card-corporative p {
       overflow: hidden; }
 
-  .contact-content > img {
-    height: 100%; }
   .contact-content .content-container img {
     display: none; }
   .contact-content .content-container h2 {
@@ -711,12 +714,187 @@ footer {
   .contact-content .content-container p {
     text-align: justify; } }
 @media all and (max-width: 736px) {
+  header .products {
+    padding: 0;
+    width: 100vw; }
+
+  .week-cakes {
+    height: 500px;
+    padding: 0; }
+
+  .slideshow {
+    width: 100%;
+    height: 80%;
+    flex-wrap: wrap; }
+
+  .slideshow-container-slides .slideshow-element {
+    flex-wrap: wrap; }
+    .slideshow-container-slides .slideshow-element .img,
+    .slideshow-container-slides .slideshow-element .slide-element-info {
+      width: 100%;
+      position: relative;
+      left: 0;
+      right: 0; }
+    .slideshow-container-slides .slideshow-element .slide-element-info {
+      height: auto; }
+      .slideshow-container-slides .slideshow-element .slide-element-info h2 {
+        text-align: center; }
+      .slideshow-container-slides .slideshow-element .slide-element-info p {
+        max-width: 250px; }
+
+  .slideshow-container-controls {
+    bottom: -10px; }
+
   .gallery .grid-container {
     grid-gap: 30px; }
 
   .card-gallery {
-    grid-column: span 6; } }
+    grid-column: span 6; }
+
+  .search .left {
+    display: none; }
+
+  .post {
+    flex-wrap: wrap;
+    height: auto; }
+    .post img {
+      position: relative;
+      top: 10px;
+      left: auto;
+      display: block; }
+    .post .container {
+      padding: 0 20px; }
+
+  .card-post {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+    .card-post h1 {
+      text-align: center;
+      margin-top: 50px; }
+    .card-post p {
+      text-align: justify; }
+
+  .discovery-memories img {
+    display: none; }
+
+  .show-memories {
+    width: 100%; }
+
+  .corporative {
+    height: auto; }
+
+  .card-corporative {
+    max-height: 600px; }
+    .card-corporative img {
+      width: 100px;
+      height: 100px; }
+    .card-corporative p {
+      overflow: visible;
+      text-align: justify; }
+
+  .suscribe {
+    padding: 100px 0; }
+
+  .contact-content {
+    height: auto;
+    flex-wrap: wrap; }
+    .contact-content > img {
+      position: static;
+      display: block; }
+
+  .content-container {
+    position: static;
+    width: 100%; }
+    .content-container h2 {
+      text-align: center; }
+    .content-container .line-decorator {
+      left: auto;
+      margin: 0 auto;
+      top: 40px; }
+
+  .order-form .data {
+    height: auto;
+    padding: 20px 0; }
+    .order-form .data .container input {
+      width: 100%; }
+    .order-form .data .container input,
+    .order-form .data .container textarea {
+      margin: 5px 0; }
+  .order-form .order input {
+    width: 100%;
+    margin: 5px 0; }
+
+  #story,
+  #address {
+    height: 100px;
+    border-radius: 20px; }
+
+  #story {
+    order: 3; }
+
+  #address {
+    order: 2; }
+
+  .form-contact {
+    left: auto;
+    width: 85%; }
+    .form-contact input[type="tel"],
+    .form-contact input[type="email"] {
+      width: 98%;
+      left: auto;
+      right: auto; }
+    .form-contact textarea {
+      width: 100%;
+      border-radius: 20px;
+      height: 100px; }
+
+  .testimonials {
+    height: auto;
+    overflow: visible; }
+    .testimonials .container > img:first-child {
+      display: none; }
+
+  .testimonials-container {
+    flex-wrap: wrap; }
+
+  .card-testimonial {
+    width: 48%; }
+
+  .card-carousel {
+    width: 100%; } }
 @media all and (max-width: 480px) {
+  .btn {
+    font-size: 16px; }
+
+  .post .card-post {
+    padding: 0; }
+
+  .search .right {
+    display: none; }
+  .search form {
+    flex-wrap: wrap; }
+    .search form input[type="search"],
+    .search form input[type="submit"] {
+      width: 100%;
+      margin: 10px 0; }
+
+  .card-search {
+    width: 100%;
+    text-align: center; }
+
+  .show-memories {
+    padding: 0 10px; }
+
+  .card-testimonial {
+    width: 100%;
+    padding: 0 50px; }
+
+  .carousel-products {
+    height: auto; }
+    .carousel-products .container {
+      flex-wrap: wrap; }
+
   .gallery .grid-container {
     grid-gap: 10px; }
 
@@ -724,6 +902,35 @@ footer {
     grid-column: span 12; }
     .card-gallery img {
       margin: 0 auto;
-      max-width: 300px; } }
+      max-width: 300px; }
+
+  .tell-story {
+    padding: 30px 0; }
+    .tell-story p {
+      text-align: justify; }
+    .tell-story .btns-container {
+      padding: 50px 0; }
+      .tell-story .btns-container .btn {
+        margin: 10px; }
+
+  .card-corporative {
+    grid-column: span 3;
+    margin: 20px 0; }
+
+  .suscribe form {
+    flex-wrap: wrap; }
+  .suscribe input[type="email"] {
+    width: 100%;
+    margin-left: 0px; }
+  .suscribe input[type="submit"] {
+    width: 100%;
+    margin-right: 0;
+    order: 2; }
+
+  .order-form .order {
+    padding: 30px 10px; }
+
+  .content-contact p {
+    padding: 10px 0; } }
 
 /*# sourceMappingURL=custom.css.map */

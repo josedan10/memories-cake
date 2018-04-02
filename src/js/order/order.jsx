@@ -12,8 +12,8 @@ export default class Order extends React.Component {
 					<div className="container flex-between">
 						<input type="text" name="name" id="name" placeholder="Name"/>
 						<input type="text" name="last_name" id="last_name" placeholder="Last name"/>
-						<textarea name="address" id="address" placeholder="Address"></textarea>
-						<textarea name="story" id="story" placeholder="Story"></textarea>
+						<textarea name="address" id="address" placeholder="Address" />
+						<textarea name="story" id="story" placeholder="Story" />
 						<input type="tel" name="phone" id="phone" placeholder="Phone"/>
 						<input type="email" name="email" id="email" placeholder="Email"/>
 					</div>
@@ -25,8 +25,10 @@ export default class Order extends React.Component {
 						<input type="text" name="candy_bar" id="candy_bar" placeholder="Candy bar"/>
 						<input type="submit" value="Send" className="btn btn-search"/>
 
-						<h2>We will contact you</h2>
-						<span className="line-decorator"></span>
+						<div className="title-section">
+							<h2>We will contact you</h2>
+							<span className="line-decorator" />
+						</div>
 					</div>
 				</div>
 			</form>

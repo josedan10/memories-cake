@@ -83,12 +83,13 @@
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: 1fr;
     padding-top: 50px;
+    grid-column-gap: 10px;
 }
 
 .card-corporative {
     grid-column: span 1;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 50px 1fr;
+    grid-template-rows: 150px 50px auto;
 
     p,
     h2 {

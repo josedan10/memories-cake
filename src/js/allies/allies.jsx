@@ -72,10 +72,12 @@ export default class Allies extends React.Component {
 
 		return (
 
-			<div className="cover-bg">
+			<div className="cover-bg flex-center">
 				<div className="container flex-center">
-					<h1>Allies</h1>
-					<span className="line-decorator" />
+					<div className="title-section flex-center">
+						<h1>Allies</h1>
+						<span className="line-decorator" />
+					</div>
 
 					<div className="slideshow-container-slides allies-container flex-center">
 						{slidesAllies.map((element, key) => {

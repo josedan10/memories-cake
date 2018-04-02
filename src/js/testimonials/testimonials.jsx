@@ -8,8 +8,9 @@ export default class Testimonials extends React.Component {
 	render() {
 		return (
 			<div className='flex-center' style={{ width: '100%', flexWrap: 'wrap' }}>
+				<img className='background-image left' src={this.props.presentation.img1} alt=''/>
+				<img className='background-image right' src={this.props.presentation.img2} alt=''/>
 				<div className='container grid-container'>
-					<img className='background-image' src={this.props.presentation.img1} alt=''/>
 					<div className='testimonial-presentation flex-center'>
 						<h1>{this.props.presentation.title}</h1>
 						<p>{this.props.presentation.content}</p>
@@ -17,7 +18,6 @@ export default class Testimonials extends React.Component {
 					<div className='testimonials-container flex-center'>
 						{this.props.testimonials.map(testimonial => <TestimonialCard key={'testimonial-' + testimonial.name} data={testimonial} />)}
 					</div>
-					<img className='background-image' src={this.props.presentation.img2} alt=''/>
 				</div>
             
 				<hr/>

@@ -65,6 +65,14 @@ h3 {
     color: $dark-brown;
 }
 
+.title-section {
+    flex-wrap: wrap;
+    h1 {
+        width: 100%;
+        text-align: center;
+    }
+}
+
 // Paragraphs
 p {
     padding: 10px 0;
