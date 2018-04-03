@@ -5,9 +5,77 @@ export default class Order extends React.Component {
 		super(props);
 	}
 
+	checkForm (event) {
+		var name = document.getElementById('name').value,
+			lastName = document.getElementById('last_name').value,
+			address = document.getElementById('address').value,
+			story = document.getElementById('story').value,
+			phone = document.getElementById('phone').value,
+			email = document.getElementById('email').value;
+
+		// Regular expressions
+		var nameReg = /\d/;
+		
+		// Name validation
+		if (name === '' || name === undefined || name === null){
+			// Customize alert 
+			alert('Debes colocar tu nombre');
+			event.preventDefault();
+			return false;
+		} else if (nameReg.test(name)) {
+			
+			alert('Caracteres inválidos en el nombre');
+			event.preventDefault();
+			return false;
+		}
+
+		// Last Name validation
+		if (lastName === '' || lastName === undefined || lastName === null){
+			// Customize alert 
+			alert('Debes colocar tu Apellido');
+			event.preventDefault();
+			return false;
+		} else if (nameReg.test(lastName)) {
+			
+			alert('Caracteres inválidos en el Apellido');
+			event.preventDefault();
+			return false;
+		}
+
+		// Phone validation
+		if (phone === '' || phone === null || phone === undefined) {
+			alert('Debes introducir un número de teléfono');
+			event.preventDefault();
+			return false;
+		} else if (phone.validity.valid) {
+			alert('Debes introducir un número de teléfono válido');
+			event.preventDefault();
+			return false;
+		}
+
+		// Email validation
+		if (email === '' || email === null || email === undefined) {
+			alert('Debes introducir un email');
+			event.preventDefault();
+			return false;
+		} else if (email.validity.valid) {
+			alert('Debes colocar un email válido');
+			event.preventDefault();
+			return false;
+		}
+
+		if (address === '' || address === null || address === undefined) {
+			alert('Debes introducir una dirección');
+			event.preventDefault();
+			return false;
+		}
+		
+		return true;
+	}
+
 	render() {
 		return (
-			<form action="" method="post" className="flex-center">
+			<form action="" method="post" className="flex-center" onSubmit={this.checkForm}>
 				<div className="data flex-center">
 					<div className="container flex-between">
 						<input type="text" name="name" id="name" placeholder="Name"/>

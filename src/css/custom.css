@@ -15,6 +15,10 @@ img {
 ::-moz-selection {
   /* Code for Firefox */ }
 
+textarea:focus,
+input:focus {
+  outline: none; }
+
 html,
 body {
   height: 100%; }

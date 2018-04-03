@@ -36,6 +36,11 @@ img {
 	// color: $grisOsc;
 }
 
+textarea:focus, 
+input:focus{
+    outline: none;
+}
+
 html,
 body{
 	height: 100%;
