@@ -566,7 +566,7 @@ header {
       color: #7a3900; }
 
 .allies {
-  background-image: url("../img/utensilios.jpg");
+  background-image: url("../src/img/utensilios.jpg");
   background-position: right center;
   width: 100%;
   height: 100vh;

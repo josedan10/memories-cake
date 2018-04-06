@@ -14,3 +14,9 @@
 Route::get('/', function () {
     return view('frontend.home');
 });
+
+Route::get('cakes-and-cupcakes', 'CakesAndCupcakesController@index');
+Route::get('discover-memories', 'DiscoverMemoriesController@index');
+Route::get('our-services', 'OurServicesController@index');
+Route::get('order', 'OrderController@index');
+Route::get('contact', 'ContactController@index');
