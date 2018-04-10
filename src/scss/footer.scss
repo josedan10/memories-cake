@@ -1,6 +1,7 @@
 footer {
     position: relative;
     background-color: $light-gray;
+    min-height: 580px;
 
     & > .grid-container {
         padding: 10px;

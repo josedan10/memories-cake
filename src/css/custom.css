@@ -149,8 +149,11 @@ textarea {
 
 header {
   height: 100vh;
+  min-height: 400px;
   background-color: #fff;
-  grid-template-rows: 1fr 20px; }
+  grid-template-rows: 1fr 20px;
+  overflow: hidden;
+  position: relative; }
   header nav {
     z-index: 10;
     padding-bottom: 20px;
@@ -168,11 +171,12 @@ header {
       height: 100%;
       z-index: 200; }
   header .products {
-    max-height: 500px;
     padding: 0 50px;
     background-color: #e5e5e5;
     position: relative;
-    overflow: hidden; }
+    overflow: hidden;
+    height: 100%;
+    min-height: 300px; }
   header .card-products p {
     color: #c69c6b;
     padding: 10px 0; }
@@ -641,7 +645,8 @@ header {
 
 footer {
   position: relative;
-  background-color: #e5e5e5; }
+  background-color: #e5e5e5;
+  min-height: 580px; }
   footer > .grid-container {
     padding: 10px;
     grid-template-columns: repeat(3, 1fr);

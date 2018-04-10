@@ -10,7 +10,7 @@ function toogleMenu() {
 		icon.classList.add('icon-close');
 		icon.classList.remove('icon-menu');
 
-		document.getElementsByTagName('body')[0].style.overflow = 'hidden';
+		if (window.innerWidth <= 480) document.getElementsByTagName('body')[0].style.overflow = 'hidden';
 
 	} else {
 
@@ -20,6 +20,6 @@ function toogleMenu() {
 		icon.classList.add('icon-menu');
 		icon.classList.remove('icon-close');
 
-		document.getElementsByTagName('body')[0].style.overflow = 'scroll';
+		if (window.innerWidth <= 480) document.getElementsByTagName('body')[0].style.overflow = 'scroll';
 	}
 }
