@@ -15,9 +15,16 @@ header {
     .logo {
         padding: 20px;
         height: 200px;
+        z-index: 100;
+
+        a {
+            display: none;
+            z-index: 100;
+        }
 
         img {
             height: 100%;
+            z-index: 200;
         }
     }
 

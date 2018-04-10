@@ -159,14 +159,9 @@ header {
       display: inline-block; }
   header .logo {
     padding: 20px;
-    height: 200px;
-    z-index: 100; }
-    header .logo a {
-      display: none;
-      z-index: 100; }
+    height: 200px; }
     header .logo img {
-      height: 100%;
-      z-index: 200; }
+      height: 100%; }
   header .products {
     max-height: 500px;
     padding: 0 50px;
@@ -645,11 +640,10 @@ footer {
   footer > .grid-container {
     padding: 10px;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr;
-    grid-auto-rows: 0; }
+    grid-template-rows: 1fr; }
   footer .sub-grid {
     grid-template-columns: 1fr;
-    grid-template-rows: minmax(100px, 200px) 260px;
+    grid-template-rows: 200px 300px;
     grid-row-gap: 10px;
     height: 100%;
     width: 100%;
@@ -709,44 +703,8 @@ footer {
   .buttons-container .btn {
     width: 150px; }
 
-  header .logo {
-    justify-content: space-between;
-    align-items: center;
-    height: 100px; }
-    header .logo img {
-      height: 150%; }
-    header .logo a {
-      display: block;
-      font-size: 30px;
-      margin-top: 15px; }
-      header .logo a span {
-        color: #c69c6b; }
-  header hr {
-    visibility: hidden; }
-  header nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 100px;
-    right: 0;
-    width: 100%;
-    max-width: 250px;
-    padding: 0;
-    background-color: rgba(255, 255, 255, 0.8);
-    overflow: hidden; }
-    header nav span {
-      display: none; }
-    header nav ul {
-      flex-direction: column;
-      width: 100%;
-      height: 100%; }
-      header nav ul li {
-        margin: 10px 0; }
-    header nav.hide {
-      height: 0; }
-    header nav.show {
-      height: 300px; }
+  nav span {
+    display: none; }
 
   .card-gallery {
     grid-column: span 4; }
@@ -911,37 +869,8 @@ footer {
     width: 48%; }
 
   .card-carousel {
-    width: 100%; }
-
-  footer .info {
-    grid-column: span 3; }
-  footer .header {
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-    footer .header img {
-      height: 100px;
-      bottom: auto; }
-    footer .header .line-decorator {
-      bottom: 20px; }
-  footer .footer-contact {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center; }
-  footer .nav-footer-container,
-  footer .instagram {
-    display: none; }
-
-  .flex-li {
-    width: 200px; } }
+    width: 100%; } }
 @media all and (max-width: 480px) {
-  header nav.show {
-    height: 100vh;
-    top: 0;
-    max-width: 100vw;
-    width: 100vw; }
-
   .btn {
     font-size: 16px; }
 

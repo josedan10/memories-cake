@@ -52,6 +52,67 @@
     }
 
     // Changes to movil nav
+    header {
+        .logo {
+            justify-content: space-between;
+            align-items: center;
+            height: 100px;
+
+            img {
+                height: 150%;
+            }
+
+            a {
+                display: block;
+                font-size: 30px;
+                margin-top: 15px;
+
+                span{
+                    color: $light_brown;
+                }
+            }
+        }
+
+        hr {
+            visibility: hidden;
+        }
+        
+        nav {
+            // display: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 100px;
+            right: 0;
+            width: 100%;
+            max-width: 250px;
+            padding: 0;
+            background-color: rgba($color: white, $alpha: .8);
+            overflow: hidden;
+    
+            span {
+                display: none;
+            }
+    
+            ul {
+                flex-direction: column;
+                li {
+                    margin: 10px 0;
+                }
+                width: 100%;
+                height: 100%;
+            }
+
+            &.hide {
+                height: 0;
+            }
+            
+            &.show {
+                height: 300px;
+            }
+        }
+    }
 
     .card-gallery {
         grid-column: span 4;
@@ -313,9 +374,55 @@
     .card-carousel {
         width: 100%;
     }
+
+    footer {
+        .info {
+            grid-column: span 3;
+        }
+
+        .header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                height: 100px;
+                bottom: auto;
+            }
+
+            .line-decorator{
+                bottom: 20px;
+            }
+        }
+
+        .footer-contact {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .nav-footer-container,
+        .instagram {
+            display: none;
+        }
+    }
+
+    .flex-li {
+        width: 200px;
+    }
 }
 @media all and (max-width: 480px) { 
     
+    header {
+        nav.show {
+            height: 100vh;
+            top: 0;
+            max-width: 100vw;
+            width: 100vw;
+        }
+    }
+
     .btn {
         font-size: 16px;
     }
